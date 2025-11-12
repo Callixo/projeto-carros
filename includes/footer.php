@@ -4,6 +4,6 @@
             <p>&copy; <?php echo date('Y'); ?> Tuned Garage - Todos os direitos reservados.</p>
         </div>
     </footer>
-    <script src="assets/js/script.js"></script>
+</div> </div> <script src="js/main.js"></script>
 </body>
 </html>
