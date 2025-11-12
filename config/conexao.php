@@ -4,7 +4,7 @@
 
 /********** CONFIGURAÇÃO (edite aqui) **********/
 $db_host = 'bancowebtune.cl4ge2ygios4.us-east-1.rds.amazonaws.com'; // endpoint RDS
-$db_port = '3307';
+$db_port = '3306';
 $db_name = 'webtunedb';
 $db_user = 'admin';
 $db_pass = 'Webtune2025';
