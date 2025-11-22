@@ -1,6 +1,6 @@
 <?php
 session_start();
-require '../config/conexao.php';
+require '/var/www/html/projeto-carros/config/conexao.php';
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     header('Location: ../login.php');

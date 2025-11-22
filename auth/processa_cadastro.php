@@ -1,5 +1,5 @@
 <?php
-require '../config/conexao.php';
+require '/var/www/html/projeto-carros/config/conexao.php';
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     // Se o método não for POST, redireciona

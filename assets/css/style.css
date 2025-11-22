@@ -498,3 +498,35 @@ body {
     color: white;
     border-color: var(--primary-color);
 }
+
+/* --- BOTÃO DE LOGIN NO HEADER --- */
+.btn-login-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    padding: 6px 16px;
+    border-radius: 20px; /* Bordas arredondadas */
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.btn-login-header:hover {
+    background-color: var(--primary-color);
+    color: #fff; /* Texto fica branco no hover */
+    transform: translateY(-2px); /* Efeito sutil de subida */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Ajuste para o modo escuro (Dark Mode) */
+body.dark-mode .btn-login-header {
+    color: var(--primary-color); /* Mantém a cor primária ou pode usar branco */
+    border-color: var(--primary-color);
+}
+body.dark-mode .btn-login-header:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}

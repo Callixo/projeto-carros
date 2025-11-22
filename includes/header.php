@@ -18,11 +18,13 @@ if (session_status() === PHP_SESSION_NONE) {
 
     <header class="main-header">
         <div class="container">
-            <a href="painel.php" class="logo">MeuSistema</a>
+            <a href="painel.php" class="logo">WEBTUNE</a>
 
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.php">Início</a></li>
+                    <li><a href="estoque.php">Estoque</a></li>
+                    <li><a href="contato.php">Contato</a></li>
                     <?php if (isset($_SESSION['usuario_perfil']) && $_SESSION['usuario_perfil'] === 'master'): ?>
                         <li class="nav-admin-link"><a href="consulta_usuarios.php">Usuários</a></li>
                         <li class="nav-admin-link"><a href="consulta_logs.php">Logs</a></li>
@@ -41,10 +43,19 @@ if (session_status() === PHP_SESSION_NONE) {
                     <div class="user-dropdown">
                         <span>Olá, <?php echo htmlspecialchars(explode(' ', $_SESSION['usuario_nome'])[0]); ?> <i class="fa-solid fa-caret-down"></i></span>
                         <div class="dropdown-content">
+                            <?php if (isset($_SESSION['usuario_perfil']) && $_SESSION['usuario_perfil'] === 'master'): ?>
+                                <a href="consulta_usuarios.php">Gerenciar Usuários</a>
+                            <?php endif; ?>
+                            
                             <a href="alterar_senha.php">Alterar Senha</a>
                             <a href="auth/logout.php">Sair</a>
                         </div>
                     </div>
+
+                <?php else: ?>
+                    <a href="login.php" class="btn-login-header">
+                        <i class="fa-solid fa-right-to-bracket"></i> Entrar
+                    </a>
                 <?php endif; ?>
             </div>
         </div>

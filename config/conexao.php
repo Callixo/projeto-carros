@@ -3,11 +3,11 @@
 // ATENÇÃO: não comite este arquivo em repositórios públicos!
 
 /********** CONFIGURAÇÃO (edite aqui) **********/
-$db_host = 'bancowebtune.cl4ge2ygios4.us-east-1.rds.amazonaws.com'; // endpoint RDS
+$db_host = 'webtunedb.cl4ge2ygios4.us-east-1.rds.amazonaws.com'; // endpoint RDS
 $db_port = '3306';
 $db_name = 'webtunedb';
 $db_user = 'admin';
-$db_pass = 'Webtune2025';
+$db_pass = 'Webtunesenha1';
 $show_errors = false; // true para exibir mensagens detalhadas (só em dev)
 /***********************************************/
 
